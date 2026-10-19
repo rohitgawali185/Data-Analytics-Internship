@@ -1,0 +1,39 @@
+
+# Student Performance Analysis Using Functions
+
+def calculate_total(marks):
+    total = sum(marks)
+    return total
+
+
+def calculate_average(marks):
+    average = sum(marks) / len(marks)
+    return average
+
+
+def display_report(student_name, marks):
+    print("STUDENT PERFORMANCE REPORT")
+    print("---------------------------")
+    print("Student Name:", student_name)
+    print("Subject Marks:", marks)
+
+    total = calculate_total(marks)
+    average = calculate_average(marks)
+
+    print("Total Marks:", total)
+    print("Average Marks:", average)
+
+    if average >= 80:
+        print("Grade: A")
+    elif average >= 60:
+        print("Grade: B")
+    elif average >= 35:
+        print("Grade: C")
+    else:
+        print("Grade: Fail")
+
+
+student_name = "Rohit"
+marks = [85, 90, 78, 95, 82]
+
+display_report(student_name, marks)

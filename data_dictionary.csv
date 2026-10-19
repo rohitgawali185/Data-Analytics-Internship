@@ -1,0 +1,6 @@
+Column_Name,Data_Type,Description,Missing_Values
+Customer_ID,int64,Unique identifier assigned to each customer,0
+Customer_Name,str,Name of the customer,0
+Age,float64,Age of the customer in years,1
+City,str,City where the customer lives,0
+Purchase_Amount,float64,Amount spent by the customer,1
